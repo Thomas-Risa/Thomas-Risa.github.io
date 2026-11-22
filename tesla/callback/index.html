@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Adressen har innloggingskoden i spørringen. Den skal ikke sendes videre noe sted. -->
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>Privat side</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; font: 18px/1.5 system-ui, sans-serif; background: #101418; color: #eceff1; }
+  main { max-width: 32rem; padding: 1.5rem; text-align: center; }
+  h1 { font-size: 1.4rem; font-weight: 500; margin: 0 0 .5rem; }
+  p { margin: 0; color: #a3aeb7; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Du kan lukke dette vinduet</h1>
+  <p>Du kan gå tilbake nå.</p>
+</main>
+<script>
+  // Fjern koden fra adresselinja og historikken, så den ikke blir liggende.
+  if (location.search) history.replaceState(null, "", location.pathname);
+</script>
+</body>
+</html>
